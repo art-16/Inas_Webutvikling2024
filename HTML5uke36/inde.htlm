@@ -18,8 +18,9 @@
 
     <main>
         <section>
+            <h2>HTML Feilene som må fikses</h2>
             <article>
-                <h2>HTML Feilene som må fikses</h2>
+                <h3>HTML Feilene</h3>
                 <p>Dette er et avsnitt som mangler et avsluttende tegn</p>
                 <img src="https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_960_720.jpg" alt="Bilde med manglende fnutter">
             </article>
@@ -37,16 +38,16 @@
         <section>
             <h2>Form som mangler korrekt struktur</h2>
             <form action=submit.php method=post>
-                <label for=name>Navn<label>
+                <label for=name>Navn</label>
                 <input type=text id="name" name=name>
-                <input type="submit value="Send">
+                <input type="submitvalue="Send">
             </form>
         </section>
     </main>
 
     <footer>
         <p>Kontakt meg på epost: <a href="mailto:epost@domain.com>Epost</a></p>
-        <h1>&copy 2024 Mitt Navn</h1>
+        <h1> &amp;copy 2024 Mitt Navn</h1>
     <footer
 </body>
 </html>
