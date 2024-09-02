@@ -1,34 +1,37 @@
-<DOCTYPE>
+<!DOCTYPE html>
 <html>
-    <meta charset=utf-8>
-    <titel>Validerings Oppgave</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Validerings Oppgave</title> 
 </head>
 <body>
-    <header
-        <h1>Velkommen til Min Side<h2>
+    <header>
+        <h1>Velkommen til Min Side</h1>
         <nav>
             <ul>
                 <li><a href=index.html>Hjem</a></li>
-                <li><a href=about.html>Om Meg<li>
-                <li><a href="contact.html">Kontakt</a>
+                <li><a href=about.html>Om Meg</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
             </ul>
-        </naw>
-    </header
+        </nav>
+    </header>
 
     <main>
         <section>
-            <articl>
-                <h2>HTML Feilene som må fikses<h3>
-                <p>Dette er et avsnitt som mangler et avsluttende tegn
-                <img src="https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_960_720.jpg alt="Bilde med manglende fnutter>
-            </articl>
+            <article>
+                <h2>HTML Feilene som må fikses</h2>
+                <p>Dette er et avsnitt som mangler et avsluttende tegn</p>
+                <img src="https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_960_720.jpg" alt="Bilde med manglende fnutter">
+            </article>
         </section>
 
         <section>
             <h2>Eksempel Liste</h2>
-                <li>Punkt en
-                <li>Punkt to</li
+            <ul>
+                <li>Punkt en</li>
+                <li>Punkt to</li>
                 <li>Punkt tre</li>
+            </ul>
         </section>
 
         <section>
