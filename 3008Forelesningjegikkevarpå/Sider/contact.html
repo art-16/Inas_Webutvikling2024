@@ -34,6 +34,39 @@
             <section>
                 <h2>Kontakt oss</h2>
             </section>
+            <section>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post">
+
+                    <!--Dette er to måter å skrive label på, usikker på hva som er bedre med 
+id label og hva som er fordelen med å drppe den innpakkingen-->
+                    <label for="navn"> Navn:</label>
+                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45" required>
+                    
+                            <!--Den neste label er annerledes se på epost labelen:-->
+
+                    <label>
+                        E-post:
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        <!---etter patterns så har vi googla pattern og email og vært inne på sen worksiden å hentet og limet inn her,
+                        det pattern gjør er at den gir brukeren beskjed/pattterns for at det skal være epost og alakrøll i epostfeltet feks-->
+                    </label>
+                    <!---bruk denne ovenfor!-->
+                    
+                    <label>
+                        Emne:
+                        <input type="text" name="emne" placeholder="Hva handler det om?">
+                    </label>
+
+                    <label>
+                        Melding:
+                        <textarea name="melding">required</textarea>
+                        <!--required er for at man mÅ kople på navn på din epost, sant? Så det ikke kommer inne masse mail uten navn-->
+                    </label>
+                    <input type="submit" value="Send melding">
+
+                </form>
+            </section>
         </main>
         <footer>2024 Ina</footer>
 
