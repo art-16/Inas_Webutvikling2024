@@ -60,10 +60,32 @@ id label og hva som er fordelen med å drppe den innpakkingen-->
 
                     <label>
                         Melding:
-                        <textarea name="melding">required</textarea>
+                        <textarea name="melding" required> </textarea>
                         <!--required er for at man mÅ kople på navn på din epost, sant? Så det ikke kommer inne masse mail uten navn-->
                     </label>
+                    <label>
+                        nei
+                        <input type="radio" name="valg">
+                     </label>
+                     <label>
+                        ja
+                        <input type="radio" name="valg">
+                     </label>
+                        <!--på kanpper må name vre med slik at man ikke kan klikke på både nei og ja-->
+                        <label>
+                            kanskje
+                            <input type="radio" name="valg">
+                         </label>
+                         Favoritt mat
                     <input type="submit" value="Send melding">
+                         <label>
+                            Favoritt mat
+                    <select name="fav">
+                        <option value="Pizza"> Pizza</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="Kebab">Kebab</option>
+                    </select>
+                    </label>
 
                 </form>
             </section>
