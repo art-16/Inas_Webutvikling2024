@@ -22,8 +22,48 @@
                 <label>
                     E-post:
                     <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-
                 </label>
+
+                <label>
+                    Passord:
+                    <input type="password" name="password" placeholder="Ditt passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+
+                <label>
+                    Alder:
+                    <input type="number" name="number" placeholder="Min alder" min="18" max="99" required>
+                </label>
+
+                <label>
+                    Telefonnummer:
+                    <input type="tel" name="tel"  pattern="[0-9]{8,12}" required>
+                </label>
+
+                <label>
+                    Fødselsdato:
+                    <input type="date" name="date" max="2023-12-31" required>
+                </label>
+                
+                <label>
+                    Kjønn:
+                    <input type="radio" name="valg">
+                </label>
+                <label>
+                    Kvinne
+                    <input type="radio" name="valg">
+                </label>
+                <label>
+                    Mann
+                    <input type="radio" name="valg">
+                </label>
+                <label>
+                    Annet
+                    <input type="radio" name="valg">
+                </label>
+
+                <input type="submit" value="Send">
+
+            
     
             </form>
         </header>
