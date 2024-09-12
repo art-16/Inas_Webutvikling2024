@@ -4,27 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Nettsidemal</title>
+        <title>Registreingskjema</title>
     </head>
     <body>
         <header>
             <!--toppdenen av siden-->
-            <a href="#"><h1>Forside nettsidemal</h1></a>
+            <a href="#"><h1>Registreingskjema</h1></a>
 
             <nav>
                 <a href="index.html"><h6>Forsiden</h6></a><!-- her skal jeg kanskje ha noe?-->
             </nav>
+            <h2>Oppgave 1 skjema </h2>
+            <form method="post">
+                <label for="name">Navn:</label>
+                <input type="text" name="navn" placeholder="Skriv inn ditt navn her.." id="name" maxlength="45" minlength="2" required>
+            
+                <label>
+                    E-post:
+                    <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+
+                </label>
+    
+            </form>
         </header>
     </body>
-    <header>
-        <img src="bilder.png" alt="bilde av regisrer here">
-        <nav>
-            <!--Litt usikker på hva jeg skal ha her, oppg spør ikke etter det men jeg tenker det er naturlig?-->
-        </nav>
-        <form>
-            <label for="name">Navn:</label>
-            <input type="name" placeholder="Skriv inn ditt navn:">
-            
-        </form>
-    </header>
+    
 </html>
