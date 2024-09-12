@@ -15,29 +15,30 @@
                 <a href="index.html"><h6>Forsiden</h6></a><!-- her skal jeg kanskje ha noe?-->
             </nav>
             <h2>Oppgave 1 skjema </h2>
+
             <form method="post">
                 <label for="name">Navn:</label>
                 <input type="text" name="navn" placeholder="Skriv inn ditt navn her.." id="name" maxlength="45" minlength="2" required>
-            
+            <br>
                 <label>
                     E-post:
                     <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-                </label>
+                </label><br>
 
                 <label>
                     Passord:
                     <input type="password" name="password" placeholder="Ditt passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </label>
-
+<br>
                 <label>
                     Alder:
                     <input type="number" name="number" placeholder="Min alder" min="18" max="99" required>
-                </label>
+                </label> <br>
 
                 <label>
                     Telefonnummer:
                     <input type="tel" name="tel"  pattern="[0-9]{8,12}" required>
-                </label>
+                </label> <br>
 
                 <label>
                     Fødselsdato:
@@ -59,12 +60,11 @@
                 <label>
                     Annet
                     <input type="radio" name="valg">
-                </label>
-
+                </label> <br>
+<br>
                 <input type="submit" value="Send">
 
-            
-    
+        
             </form>
         </header>
     </body>
