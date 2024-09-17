@@ -1,0 +1,8 @@
+#Notater: 
+#Unngå inline css, altså legge css inn i html tagg, ikke gjør det. 
+Vi lager et egent css ark hvor alle stiler for nettstedet er. 
+#TYPE er en selekotor
+#Class er en annen selektor som gjør at alle p taggene f eks kan være like f eks, men kan ha
+#flere klasser på ett element, 
+#id er en selektor som gir en unik sak den kan ikke gjenbrukes, den skal vøre på ETT sted, litt som ett personnummer
+#universal = * den gjelder altså hele dokumentet, f eks start på bokx size, alle størrelser skrift f eks.
