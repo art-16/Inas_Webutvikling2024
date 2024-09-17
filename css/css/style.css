@@ -1,0 +1,37 @@
+body{
+    font-family: arial, helvetica, sans-serif;
+}
+/*body ovenfor sier noe om tre ulike fonter som er fallback*/
+
+/*Nedenfor header nav sier noe om å legge nav etter hverandre*/
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+
+h1{color: rgb(215, 17, 172);
+font-size: 60px;
+background-color: blanchedalmond;
+padding: 2rem;
+}
+/*Jeg falt av ved a.btn, eller jeg tror d ble rett*/
+a{
+    text-decoration: non;
+    font-size: ;
+}
+
+a.btn{
+    background-color: blanchedalmond;
+    color: black;
+    padding: 2rem;
+    display: inline-block;
+    margin: 10px 0px;
+    /*
+    Padding?
+    Display?
+    Margin=shorthand metoden for marger, går mot klokka*/
+
+}
