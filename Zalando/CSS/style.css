@@ -1,33 +1,65 @@
-body{
-    
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  font-size: 18px; /*Setter grunnsøttelsen på teksten i hele dokumentet */
 }
 
-#main-logo{
-    width: 100%;
-    max-width: 250px;
-    width: 100%;
-    margin: 0px auto;
-    display: block;
+*{ box-sizing: border-box; /*Inkluderer padding og border i elementets totale bredde og høyde*/
+}
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif; /*Setter foten eller skriften til Arial og dersom den ikke finnes blir det fallback til helvetica*/
+}
+
+img {
+  width: 100%; /*Logoen tar opp 100% av containerens bredde (BETYR??)*/
+  max-width: 400px; 
+}
+
+#main-logo {
+    width: 100%; /*Logoen vil ta opp 100 prosent av containerens bredde*/
+    max-width: 250px; /*Mens max bredde på logoen er 250 px*/
+    display: block; /*Gjør logoen om til et blokk element*/
+    margin: 0px auto;/*Sentrerer logoen horisontalt*/
 }
 
 .flex-menu {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .flex-menu a{
-    text-decoration: none;
-    color: #000;
+    display: flex; /*bruker flexbox for å arrangere elementene i menyen*/
+    list-style: none; /*Fjerner punktmerking på listelementen*/
+    gap: 1rem; /*Legger til et gappå 1 rem mellom meny elemntene*/
+    padding: 0; /*Fjener standard padding fra lista*/
+    margin: 0; /*Gjener standard marin fra lista*/
+    flex-wrap: wrap; /*Tillater at elementene brytes til neste rad hvis det ikke er nok plass*/
   }
 
-  element {
-    display: flex;
-  
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
+.flex-menu a {
+    text-decoration: none; /*Fjerner understreken fra lenkene*/
+    color: #000; /*Setter fargen på lenkene til svart*/
   }
+
+.flex-space-b {
+    display: flex; /*bruker flexbox for layoyt HVA BETYR DET?*/
+    justify-content: space-between; /*Fordeler elementene jevnt med palss mellome den*/
+    flex-wrap: wrap; /*tillater el elementene brytes til neste rad*/
+    gap: 1rem; /*legger tile t gap på 1 rem mellom elementene*/
+}
+
+.flex-space-b form {
+    position: relative; /*Gjør skjema fleksibelt for posisjonering av indre elementer*/
+}
+.flex-space-b form label {
+    visibility: hidden; /* Skjuler etiketten visuelt, men beholder den for tilgjengelighet */
+    position: absolute; /* Posisjonerer etiketten absolutt i forhold til skjemaet */
+  }
+
+#outlet {
+    color: #ff0000; /* Setter teksten til elementet med ID 'outlet' til rød farge */
+}
+
+.product-card {
+    max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
+    min-width: 200px; /* Minimum bredde for produktkortet er 200px */
+    width: 100%; /* Produktkortet tar opp 100% av sin container */
+    box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
+    border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+    padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+}

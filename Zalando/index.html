@@ -8,9 +8,13 @@
         <title>Zalando Light | Forside</title>
     </head>
     <body>
+        <!--Body starter hovedinnholdet på siden-->
         <header>
+            <!--header definerer toppinnholdet på siden, der det er logo navigasjon osv-->
             <img id="main-logo" src="img/logo_1.png" alt="Nettsted logo1">
+            <!---Viser nettstedets logo, "alt" viser en tekst dersom bildet ikke lastes ned, eller for skjeropplesere-->
             <nav class="flex-space-b">
+                <!--Nav definferer navigasjonsstedet på sida, men class det er jeg litt usikker på henviser det til css????-->
                 <ul class="felx-menu">
                     <li><a href="#">Nyheter</a></li>
                     <li><a href="#">Nordisk stil></a></li>
@@ -19,33 +23,50 @@
                     <li><a href="#">Accessories</a></li>
                     <li><a href="#">Streetwear</a></li>
                     <li><a href="#">Sport</a></li>
+                    <li><a herf="#">Designer</a></li>
+                    <li><a herf="#" id="outlet">Outlet</a></li>
+                    <!---her lenkes d til ulike kategorier i nav?-->
                 </ul>
                 <form>
+                    <!--Form starter søkeskjema for brukeren til å søke på nett-->
                     <label for="search">Søk</label>
+                    <!--for søk gi et tekstfelt for å søke-->
                     <input type="search" placeholder="Her kan du søke etter produkter" id="search">
+                    <!--definerer søkefeltet med en placeholder som eksempel tekst id, usikker???CSS???-->
                     <input type="submit" value="SØK">
+                    <!--submit legger til en knapp for å sende inn søket-->
                 </form>
             </nav>
         </header>
         <main>
+            <!--main definrer hovedinnholdet på sida-->
             <section>
+                <!--Section brukes for å definere en innholdtype, her er produkter og de beste tilbudene-->
                 <h2>Våre beste deals</h2>
                 <a href="#">Shop nå -></a>
+                <!--en lenke som ikke er linket ennå, men oppforder brukeren til å handle nå-->
                 <img src="img/skoheader_sitkids.webp" alt="Våre beste deals">
+                <!--Lagt inn et bilde som ligger lagret i img mappen på siden i menyen i vsc-->
             </section>
-<!---Denne section er med kida som sitter tror jeg-->
-            <section>
+
+            <section class="flex-space-b">
+                <!--En ny seksjon med produkvisning, mn HVA STÅR CLASS FLES FOR HER??-->
                 <h2>Produkter</h2>
-                <article>
+                <!--Prudukter er en overskrift-->
+
+                <article class="product-card">
+                    <!--article, vi organiserer hvert produkt som en article, articlene har jeg kopiert for å får det til å se ut som mange produkter MEN HVA ER CLASS?-->
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
-                    <!--Her linker man bildet
-                    Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
+                    <!--Her linker man bildet av produktet og "alt forteller blinde hva de ser f.eks"..-->
                     <a href="#">Ugg Originals</a>
+                    <!--Her er en link som gjør ar når du klikker på den kommer du f.eks til alle ugg orginaler, tror jeg-->
                     <a Href="#"></a><h3>Tazz</h3>
+                    <!--å her lenkes det til alle som har produktnavnet tazz-->
                     <p>899 kr</p>
+                    <!--paragrafen viser pris-->
                 </article>
                 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -54,7 +75,7 @@
                     <p>899 kr</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -63,7 +84,7 @@
                     <p>899 kr</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -72,7 +93,7 @@
                     <p>899 kr</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -81,7 +102,7 @@
                     <p>899 kr</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -90,7 +111,7 @@
                     <p>899 kr</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -99,7 +120,7 @@
                     <p>899 kr</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -108,7 +129,7 @@
                     <p>899 kr</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                     <!--Her linker man bildet
                     Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
