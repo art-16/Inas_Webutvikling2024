@@ -15,24 +15,81 @@ main{
     to {background-image: url("../sprites/")} /*få inn løpende bildet til ac*/
 }
 
+@keyframes movingMario{
+    0%{
+        left: 0;
+        bottom: 53px;
+    }
+    20%{
+        left: 407px;
+        bottom: 53px;
+    }
+    40%{
+        left:407;
+        bottom: 117;
+    }
+    50%{ 
+        left:407px;
+        bottom:53px;}
+
+    60%{
+        bottom: 53px;
+        left:575px;}
+
+    70%{
+        bottom:200px;
+    }
+
+    100%{
+        bottom 53px
+        left: 800px;
+    }
+}
+
+@keyframes marioDies{
+    0%{
+        background-image: url("../sprites/") /*velg bilde dead*/
+        bottom: 53px;
+        left:800px;
+        transform: rotate(0deg), scale(1);
+    }
+    100%{
+        bottom_150px;
+        transform: rotate(-45deg) scale(1,8);
+        background-image: url("../") /*LEgg inn et bilde*/
+        
+    }
+}
+
 @keyframes runningGompa{
-    from{background-image: url(../sprites/);} /*få inn soooppbildet*/
-    to{background-image: url(../sprites/);}/*kopi
+    from{
+        background-image: url(../sprites/);} /*få inn soooppbildet*/
+
+    to{
+        background-image: url(../sprites/);}/*kopi*/
+}
+
+@keyframes movingGompa{
+    from{right: 0;}
+    to{347 px;}
 }
 
 
 
 #supermario{
    /* background-image: url("../sprites/");
-    /*ta bildet so heter satt.png når du får hennes filer*/
-    background-size: contain;
+ ta bildet so heter satt.png når du får hennes filer*/
+    background-size: cover;
     height: 50px;
     max width: 50px;
     position: absolute;
     bottom: 53;
-    animation-name: runningMario;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
+    animation-name: runningMario movingMario, marioDies;
+    animation-iteration-count: infinite, 1, 1;
+    animation-duration: 0.5s, 3s, 0,8s;
+    anomation-fill-mode:none, forwards;
+    animation-delay; 0s, 0s, 3s;
+    z-index: 999;
     
 }
 
@@ -44,8 +101,9 @@ main{
     osition: absolute;
     bottom: 53;
     right: 0;
-    animation: runningGompa;
-    animation-iteration-count: infinite;
-    animation-duration: 0,5s;
+    animation: runningGompa; movingGompa
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 0,5s,1s;
+    animation-direction:normal, alternate;
 
 }
