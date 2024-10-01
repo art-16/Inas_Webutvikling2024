@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- Deklarerer at dokumentet bruker HTML5 -->
+<html lang="en"> <!-- Angir at dokumentets språk er engelsk -->
+<head>
+    <meta charset="UTF-8"> <!-- Definerer tegnsettet som UTF-8 for å støtte spesialtegn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sørger for responsivt design ved å tilpasse visningen til skjermstørrelsen -->
+    <title>Registrering</title> <!-- Tittel som vises i nettleserfanen -->
+</head>
+<body>
+    <header>
+        <h1>Løsningsforslag: Øvelse 3</h1> <!-- Hovedoverskrift på siden, beskriver formålet -->
+    </header>
+    
+    <nav>
+        <!-- Navigasjonsmeny for å navigere til andre sider -->
+        <ul>
+            <li><a href="index.html">Hjem</a></li> <!-- Lenke til hjemmesiden -->
+            <li><a href="validering.html">Valideringsoppgave</a></li> <!-- Lenke til valideringsoppgaven -->
+            <li><a href="oppskrift.html">Lister: Oppskrift</a></li>
+            <li><a href="mal.html">Mal</a></li> <!-- Lenke til mal-siden -->
+            <li><a href="#">Kontakt oss</a></li> <!-- Placeholder-lenke for "Kontakt oss" siden -->
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Hovedinnholdet på siden -->
+        <h2>Registrering</h2> <!-- Overskrift for registreringsseksjonen -->
+        <form>
+            <!-- Start på registreringsskjema -->
+            
+            <label>
+                Navn
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Nora Nordman.."> 
+                <!-- Tekstfelt for navn, med et mønster som godtar bokstaver og mellomrom (minimum 2 tegn) og som er påkrevd -->
+            </label>
+            
+            <label>
+                E-post
+                <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no"> 
+                <!-- Felt for e-post, med innebygd e-postvalidering og et mønster for formatet -->
+            </label>
+            
+            <label>
+                Passord
+                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required placeholder="******"> 
+                <!-- Felt for passord, som krever minst 8 tegn, inkludert en stor bokstav, en liten bokstav og et tall -->
+            </label>
+            
+            <label>
+                Alder
+                <input type="number" min="18" max="99" required> 
+                <!-- Tallfelt for alder, hvor brukeren må være mellom 18 og 99 år -->
+            </label>
+            
+            <label>
+                Telefon
+                <input type="tel" pattern="[0-9]{8,12}" required> 
+                <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
+            </label>
+            
+            <label>
+                Fødselsdato
+                <input type="date" max="2023-12-31" required> 
+                <!-- Datovelgerfelt for fødselsdato, hvor maksimal dato er satt til slutten av 2023 -->
+            </label>
+            
+            <fieldset>
+                <!-- Brukes til å gruppere relaterte alternativer, her for valg av kjønn -->
+                <legend>Kjønn</legend> <!-- Tittel for radioknappene -->
+                
+                <label>
+                    Mann
+                    <input type="radio" name="gender" value="man"> 
+                    <!-- Radioknapp for mann, med name-attributt som grupperer den med de andre kjønn-valgene -->
+                </label>
+                
+                <label>
+                    Kvinne
+                    <input type="radio" name="gender" value="female"> 
+                    <!-- Radioknapp for kvinne -->
+                </label>
+                
+                <label>
+                    Annet
+                    <input type="radio" name="gender" value="other"> 
+                    <!-- Radioknapp for annet -->
+                </label>
+            </fieldset>
+            
+            <label>
+                Land
+                <select required> 
+                    <!-- Drop-down meny for å velge land, hvor det er påkrevd å velge noe -->
+                    <option value="">Velg et land</option> <!-- Placeholder-valg -->
+                    <option value="norge">Norge</option> <!-- Valgmulighet for Norge -->
+                    <option value="danmark">Danmark</option> <!-- Valgmulighet for Danmark -->
+                    <option value="sverige">Sverige</option> <!-- Valgmulighet for Sverige -->
+                </select>
+            </label>
+            
+            <label>
+                Godkjenn personvern
+                <input type="checkbox" required> 
+                <!-- Avkrysningsboks som er påkrevd for personverngodkjenning -->
+            </label>
+            
+            <input type="submit" value="Send"> 
+            <!-- Send-knapp som sender skjemaet når det er korrekt utfylt -->
+        </form>
+    </main>
+    
+    <footer>
+        <!-- Footer-seksjonen med kontaktinformasjon -->
+        <p>Ann-Charlott Karlsen</p> <!-- Navn på siden sin eier -->
+        <p><a href="mailto:ackarlse@hiof.no">ackarlse@hiof.no</a></p> <!-- Klikkbar lenke for å sende en e-post -->
+    </footer>
+</body>
+</html>

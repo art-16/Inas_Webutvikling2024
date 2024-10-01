@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- Definerer dokumenttypen som HTML5 -->
+<html lang="en">
+    <!-- Angir språket som engelsk for hele dokumentet -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Angir tegnsettet som UTF-8 for å støtte de fleste språk og spesialtegn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sikrer at siden er responsiv og skalerer korrekt på ulike enheter -->
+    <title>Document</title>
+    <!-- Setter tittelen som vises i nettleserfanen -->
+    <style>
+        /* Definerer CSS-stilene for body, tabellceller, og overskrifter */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Angir skrifttypen for hele dokumentet */
+        }
+        th, td {
+            padding: 1rem;
+            /* Legger til padding rundt hver celle for mer luft og lesbarhet */
+            border: 1px solid #000;
+            /* Lager en svart kantlinje rundt hver celle og overskrift */
+        }
+    </style>
+</head>
+<body>
+    <!-- Hoveddelen av dokumentet starter her -->
+    <main>
+        <!-- Første tabell, som viser en timeplan med aktiviteter -->
+        <table>
+            <thead>
+                <!-- Tabellhodet som inneholder overskrifter for kolonnene -->
+                <tr>
+                    <th>Tid</th>
+                    <!-- Kolonneoverskrift for tidspunkter -->
+                    <th>Mandag</th>
+                    <th>Tirsdag</th>
+                    <th>Onsdag</th>
+                    <th>Torsdag</th>
+                    <th>Fredag</th>
+                    <!-- Kolonneoverskrifter for ukedagene -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tabellkroppen med rader og celler for innhold -->
+                <tr>
+                    <td>08:00</td>
+                    <!-- Tidspunktet 08:00 -->
+                    <td rowspan="4">Designmetoder</td>
+                    <!-- Celle som strekker seg over 4 rader for "Designmetoder" -->
+                    <td rowspan="2">Webutvikling</td>
+                    <!-- Celle som strekker seg over 2 rader for "Webutvikling" -->
+                    <td rowspan="2">Designmetoder</td>
+                    <!-- Celle som strekker seg over 2 rader for "Designmetoder" -->
+                    <td rowspan="2">Webutvikling</td>
+                    <!-- Celle som strekker seg over 2 rader for "Webutvikling" -->
+                    <td rowspan="2">Webutvikling</td>
+                    <!-- Celle som strekker seg over 2 rader for "Webutvikling" -->
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <!-- Tidspunktet 09:00 -->
+                    <!-- Denne raden har færre <td> fordi flere av cellene fra forrige rad strekker seg over denne raden med rowspan -->
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <!-- Tidspunktet 10:00 -->
+                    <td>Selvregulert læring</td>
+                    <!-- Enkel celle med innhold "Selvregulert læring" -->
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                    <td rowspan="6">Videoproduksjon</td>
+                    <!-- Celle som strekker seg over 6 rader for "Videoproduksjon" -->
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                    <!-- Det er færre <td> i denne raden fordi "Designmetoder" fortsatt strekker seg over flere rader -->
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td rowspan="2">Webutvikling</td>
+                    <!-- Celle som strekker seg over 2 rader for "Webutvikling" -->
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                    <td rowspan="2">Webutvikling</td>
+                    <!-- Celle som strekker seg over 2 rader for "Webutvikling" -->
+                    <td>Selvregulert læring</td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                    <td>Selvregulert læring</td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td>Ferdig for dagen</td>
+                    <td>Ferdig for dagen</td>
+                    <td>Ferdig for dagen</td>
+                    <td>Ferdig for dagen</td>
+                    <td>Ferdig for dagen</td>
+                    <!-- Full rad med innhold, ingen celler med rowspan som strekker seg fra tidligere rader -->
+                </tr>
+            </tbody>
+        </table>
+        <!-- Andre tabell med tomme rader og celler for fremtidig bruk -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Tid</th>
+                    <th>Mandag</th>
+                    <th>Tirsdag</th>
+                    <th>Onsdag</th>
+                    <th>Torsdag</th>
+                    <th>Fredag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

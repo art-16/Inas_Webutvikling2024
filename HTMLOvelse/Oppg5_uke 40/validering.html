@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- DOCTYPE må skrives som <!DOCTYPE html> -->
+<html lang="nb"> <!-- Manglet lang for språkangivelse -->
+    <head> <!-- Mangler head-tag rundt meta og title -->
+        <meta charset="utf-8"> <!-- Mangler anførselstegn rundt verdien til charset -->
+        <title>Validerings Oppgave</title> <!-- Feilstaving: 'titel' skal være 'title' -->
+    </head>
+<body>
+    <header> <!-- Mangler lukking av <header> -->
+        <h1>Velkommen til Min Side</h1> <!-- Feil lukking av h1: Bruk </h1> i stedet for <h2> -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li> <!-- Mangler anførselstegn rundt href-verdien -->
+                <li><a href="about.html">Om Meg</a></li> <!-- Mangler lukking av <li> tag -->
+                <li><a href="contact.html">Kontakt</a></li> <!-- Dette er riktig skrevet -->
+            </ul>
+        </nav> <!-- Feilstaving: 'naw' skal være 'nav' -->
+    </header> <!-- Mangler lukking av header-tag -->
+
+    <main>
+        <section>
+            <article> <!-- Feilstaving: 'articl' skal være 'article' -->
+                <h2>HTML Feilene som må fikses</h2> <!-- Feil lukking av h2: Bruk </h2>, ikke <h3> -->
+                <p>Dette er et avsnitt som mangler et avsluttende tegn.</p> <!-- Mangler avslutning med </p> -->
+                <img src="https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_960_720.jpg" alt="Bilde med manglende fnutter"> <!-- Mangler anførselstegn rundt alt-teksten -->
+            </article> <!-- Mangler lukking av article-tag -->
+        </section>
+
+        <section>
+            <h2>Eksempel Liste</h2>
+            <ul> <!-- Mangler <ul> for listeelementene -->
+                <li>Punkt en</li> <!-- Mangler lukking av <li> -->
+                <li>Punkt to</li> <!-- Mangler </li> på forrige linje -->
+                <li>Punkt tre</li> <!-- Dette er riktig skrevet -->
+            </ul> <!-- Mangler lukking av ul -->
+        </section>
+
+        <section>
+            <h2>Form som mangler korrekt struktur</h2>
+            <form action="submit.php" method="post"> <!-- Mangler anførselstegn rundt action og method -->
+                <label for="name">Navn</label> <!-- Mangler anførselstegn rundt for-verdien og lukking av label -->
+                <input type="text" id="name" name="name"> <!-- Mangler anførselstegn rundt type og name -->
+                <input type="submit" value="Send"> <!-- Mangler anførselstegn rundt type og value -->
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Kontakt meg på epost: <a href="mailto:epost@domain.com">Epost</a></p> <!-- Mangler avslutning med anførselstegn i href -->
+        <p>&copy; 2024 Mitt Navn</p> <!-- Mangler semikolon etter &copy, unngå å bruke <h1> mer enn en gang per side og bruk de kun på overskrifter -->
+    </footer> <!-- Mangler lukking av footer-tag -->
+</body>
+</html>

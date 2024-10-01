@@ -1,0 +1,51 @@
+main{
+    background-image: url("../sprites/");
+    /*husk på ... for da kommer bildene, men nå har ikke jeg fått latet bildene
+    dermed kommer ikke det opp enda*/
+    background-size: contain;
+    hight: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@keyframes runningMario {
+    from {background-image: url("../css/");} /*få inn saa bildet*/
+    to {background-image: url("../sprites/")} /*få inn løpende bildet til ac*/
+}
+
+@keyframes runningGompa{
+    from{background-image: url(../sprites/);} /*få inn soooppbildet*/
+    to{background-image: url(../sprites/);}/*kopi
+}
+
+
+
+#supermario{
+   /* background-image: url("../sprites/");
+    /*ta bildet so heter satt.png når du får hennes filer*/
+    background-size: contain;
+    height: 50px;
+    max width: 50px;
+    position: absolute;
+    bottom: 53;
+    animation-name: runningMario;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    
+}
+
+#gompa{
+    /*background-image: url("../sprites/"); denne kommenteres ut etter å ha lgaet keyframe*/
+    background-size: contain;
+    height: 50;
+    width: 50;
+    osition: absolute;
+    bottom: 53;
+    right: 0;
+    animation: runningGompa;
+    animation-iteration-count: infinite;
+    animation-duration: 0,5s;
+
+}
