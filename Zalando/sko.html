@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="CSS/style.css"> 
         <!--Linjen over linker til css filen rel står for relasjon til stylesheet-->
         <title>Zalando Light | Sko</title>
-    </head>
+    </head id="global-header">
     <body>
+        <div id="grid-container">
         <header>
             <img id="main-logo" src="img/logo_1.png" alt="Nettsted logo1">
             <nav class="flex-space-b">
-                <ul class="felx-menu">
+                <ul class="flex-menu">
                     <li><a href="#">Nyheter</a></li>
                     <li><a href="#">Nordisk stil></a></li>
                     <li><a href="#">Klær></a></li>
@@ -31,36 +32,38 @@
                 </form>
             </nav>
         </header> 
+        <aside id="category-menu">
+            <!--Definerer et sideinnhold, som ofte brukes til tilleggsinfo-->
+            <nav>
+                <!--Enda en navigasjonsmeny for spesifikke barnesko-->
+                <ul>
+                    <li>
+                        Sko
+                    <ul>
+                        <!--Underliste med skotypene under "skokategorien"-->
+                        <li>Sandaler</li>
+                        <li>Joggesko</li>
+                        <li>Vintersko</li>
+                        <li>Badesko</li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
+        </aside>
+
         <main>
             <nav>
                 <!--En ekstra navigasjonmeny for ungerkategorier?-->
                 <ul>
-                    <li> <a href="#"Barn ></a></li>
+                    <li> <a href="#">Barn></a></li>
                     <!--Lenke til Barneseksjon-->
                     <li>Sko</li>
                     <!--Tekst uten lenke fir sko under Barn seksjonen-->
                 </ul>
             </nav>
             <h1>Sko til barn</h1>
-            <!--Hovedoverskriften på siden sombeskriver innholdet-->
-            <aside>
-                <!--Definerer et sideinnhold, som ofte brukes til tilleggsinfo-->
-                <nav>
-                    <!--Enda en navigasjonsmeny for spesifikke barnesko-->
-                    <ul>
-                        <li>
-                            Sko
-                        <ul>
-                            <!--Underliste med skotypene under "skokategorien"-->
-                            <li>Sandaler</li>
-                            <li>Joggesko</li>
-                            <li>Vintersko</li>
-                            <li>Badesko</li>
-                        </ul>
-                    </li>
-                    </ul>
-                </nav>
-            </aside>
+            
+            
 
             <section>
                 <!--En seksjon for å vise produkter-->
@@ -80,9 +83,9 @@
                         <option value="high">Høyest pris></option>
                     </select>
                 </form>
-                <section>
+                <section class="flex-space-b">
                     <!--Starter en seksjon for visning av individuelle produkter-->
-                    <article>
+                    <article class="product-card">
                         <!--Hver produktvisning er definert som en artikkel-->
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <!--Her linker man bildet
@@ -94,20 +97,20 @@
                         <p>899 kr</p>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
                         <p>899 kr</p>
                     </article>
     
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
                         <p>899 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <!--Her linker man bildet
                         Linken nedenfor  med herf= betyr at det er en link til kategorien, ikke helt skjønte den, men...-->
@@ -116,42 +119,42 @@
                         <p>899 kr</p>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
                         <p>899 kr</p>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
                         <p>899 kr</p>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
                         <p>899 kr</p>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
                         <p>899 kr</p>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
                         <p>899 kr</p>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="img/produkt_ugg.webp" alt="Kids uggs tøffler">
                         <a href="#">Ugg Originals</a>
                         <a Href="#"></a><h3>Tazz</h3>
@@ -162,6 +165,7 @@
             </section>
         </main>
         <footer>Zalando Light 2024</footer>
+    </div>
     </body>
 
 </html>

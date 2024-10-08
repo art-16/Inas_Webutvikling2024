@@ -8,8 +8,9 @@
         <title>Zalando Light | Forside</title>
     </head>
     <body>
+        <div id="grid-container">
         <!--Body starter hovedinnholdet på siden-->
-        <header>
+        <header id="global-header">
             <!--header definerer toppinnholdet på siden, der det er logo navigasjon osv-->
             <img id="main-logo" src="img/logo_1.png" alt="Nettsted logo1">
             <!---Viser nettstedets logo, "alt" viser en tekst dersom bildet ikke lastes ned, eller for skjeropplesere-->
@@ -40,11 +41,13 @@
         </header>
         <main>
             <!--main definrer hovedinnholdet på sida-->
-            <section>
+            <section id="banner">
                 <!--Section brukes for å definere en innholdtype, her er produkter og de beste tilbudene-->
+                <div>
                 <h2>Våre beste deals</h2>
                 <a href="#">Shop nå -></a>
                 <!--en lenke som ikke er linket ennå, men oppforder brukeren til å handle nå-->
+                </div>
                 <img src="img/skoheader_sitkids.webp" alt="Våre beste deals">
                 <!--Lagt inn et bilde som ligger lagret i img mappen på siden i menyen i vsc-->
             </section>
@@ -140,6 +143,7 @@
 
         </main>
         <footer>Zalando Light 2024</footer>
+    </div>
     </body>
 
 </html>
