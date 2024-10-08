@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container{
+   /* display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;*/
+   display: grid;
+    grid-template-areas: "header header header"
+                            "nav nav nav"
+                            "main main aside"
+                            "footer footer footer";
+}
+
+header{
+    background-color: rgb(153, 196, 196);
+    grid-area: header;
+}
