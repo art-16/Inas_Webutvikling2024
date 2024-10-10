@@ -116,3 +116,42 @@ img {
     border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
     padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
 }
+
+/*desktop*/
+@media only screen and (min-width:800px){
+  .fa-bars{
+    display: none;
+  }
+  #menu{
+    display: flex !important;
+  }
+}
+ /*mobil*/
+@media only screen and (max-width: 800px){
+
+  #menu{
+    display: none;
+  }
+
+  #grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  header, main, aside, footer{
+    grid-colum: 1/2;
+  }
+
+  header{
+    grid-row: 1/2;
+  }
+  main{
+    grid-row: 2/3;
+  }
+  aside{
+    display: none;
+  }
+  footer{
+    grid-row: 3/4;
+  }
+}
