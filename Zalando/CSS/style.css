@@ -1,5 +1,5 @@
 html {
-  font-size: 18px; /*Setter grunnsøttelsen på teksten i hele dokumentet */
+  font-size: calc( 1em + 1vw); /*Setter grunnsøttelsen på teksten i hele dokumentet */
 }
 
 *{ box-sizing: border-box; /*Inkluderer padding og border i elementets totale bredde og høyde*/
@@ -9,6 +9,12 @@ body{
     
     font-family: Arial, Helvetica, sans-serif; /*Setter foten eller skriften til Arial og dersom den ikke finnes blir det fallback til helvetica*/
 }
+
+h1 {font-size: 2rem;}
+h2 {font-size: 1.8rem ;}
+h3 {font-size: 1.6rem;}
+h4{font-size: 1.4;}
+p, a{font-size: 1rem;}
 
 #grid-container{
   display: grid;
@@ -30,6 +36,19 @@ body{
   flex-wrap: wrap;
   background-color: #efefef;
   justify-content: space-around;
+
+  img{
+    max-width: 70% ;
+  }
+}
+
+#banner div{
+  width: 30%
+  padding: 1rem;
+}
+
+#banner div h2{
+  font-size:  1rem 0rem 1rem 1rem 1rem;
 }
 
 main {
@@ -125,6 +144,8 @@ img {
   #menu{
     display: flex !important;
   }
+  h3{font-size: 1.2rem;}
+  p,a{font-size: 0.6rem;}
 }
  /*mobil*/
 @media only screen and (max-width: 800px){
